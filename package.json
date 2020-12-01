@@ -1,0 +1,24 @@
+{
+  "name": "vuepress-dome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs --temp .temp",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chengfeng12/vuepress-dome.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chengfeng12/vuepress-dome/issues"
+  },
+  "homepage": "https://github.com/chengfeng12/vuepress-dome#readme",
+  "devDependencies": {
+    "vuepress": "^1.7.1"
+  }
+}
