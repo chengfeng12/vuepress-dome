@@ -1,7 +1,7 @@
 ---
 # home 为 false 时，可以在首页显示侧边栏
 home: true
-heroText: Hero 标题
+heroText: Hero 标题111111
 tagline: Hero 副标题
 actionText: 快速上手 →
 actionLink: /zh/guide/
