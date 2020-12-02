@@ -10,7 +10,7 @@ module.exports = {
     ['meta', { name: 'author', content: '我是一只鱼' }],
     ['meta', { name: 'keywords', content: '我是一只鱼的博客网站，vuepress' }],
   ],
-  base: '/dist/',
+  base: '/docs/',
   plugins: [
     [
       '@vuepress/last-updated',
