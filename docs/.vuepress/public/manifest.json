@@ -1,0 +1,18 @@
+{
+  "name": "我是一只鱼",
+  "short_name": "鱼",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#fff",
+  "description": "A simply readable Hacker News app.",
+  "icons": [{
+    "src": "/icons/apple-touch-icon-152x152.png",
+    "sizes": "547x547",
+    "type": "image/png"
+  }, {
+    "src": "/icons/apple-touch-icon-152x152.png",
+    "sizes": "547x547",
+    "type": "image/png"
+  }]
+}
