@@ -45,6 +45,7 @@ module.exports = {
       // 自动创建评论区域
       autoCreateIssue: true
     },
+    '@vuepress/back-to-top': {},
   },
   // 如果你的主题名以 vuepress-theme- 开头，你可以使用缩写来省略这个前缀
   // theme: 'yyy',
