@@ -8,11 +8,11 @@
   "description": "A simply readable Hacker News app.",
   "icons": [{
     "src": "/icons/apple-touch-icon-152x152.png",
-    "sizes": "547x547",
+    "sizes": "200x200",
     "type": "image/png"
   }, {
     "src": "/icons/apple-touch-icon-152x152.png",
-    "sizes": "547x547",
+    "sizes": "200x200",
     "type": "image/png"
   }]
 }
