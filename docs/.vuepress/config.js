@@ -1,14 +1,15 @@
 // 引入插件
 const moment = require('moment');
+moment.locale("zh-cn")
 
 module.exports = {
-  title: '我是一只鱼',
+  title: '我是一条鱼',
   description: '我是一只快乐的鱼的网站，欢迎前来参观',
   head: [
     // seo 优化，添加网站说明，利于seo搜索，说明言简意赅，关键词突出
     ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['meta', { name: 'author', content: '我是一只鱼' }],
-    ['meta', { name: 'keywords', content: '我是一只鱼的博客网站，vuepress' }],
+    ['meta', { name: 'author', content: '我是一条鱼' }],
+    ['meta', { name: 'keywords', content: '我是一条鱼的博客网站，vuepress' }],
 
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
@@ -20,29 +21,31 @@ module.exports = {
     ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
   ],
   base: '/docs/',
-  plugins: [
-    [
-      '@vuepress/last-updated',
-      {
-        transformer: (timestamp, lang) => {
-          // 不要忘了安装 moment
-          // lang
-          moment.locale("zh-cn")
-          return moment(timestamp).format("LLLL")
-        }
+  plugins: {
+    '@vuepress/last-updated': {
+      // 不要忘了安装 moment
+        // lang
+      transformer: (timestamp, lang) => moment(timestamp).format("LLLL")
+    },
+    '@vuepress/pwa': {
+      serviceWorker: true,
+      updatePopup: {
+        message: "发现有新的内容",
+        buttonText: "更新"
       }
-    ],
-    [
-      '@vuepress/pwa',
-      {
-        serviceWorker: true,
-        updatePopup: {
-          message: "新的公告",
-          buttonText: "更新提示"
-        }
-      }
-    ]
-  ],
+    },
+    '@vssue/vuepress-plugin-vssue': {
+      // 设置 `platform` 而不是 `api`
+      platform: 'github-v4',
+      // 其他的 Vssue 配置
+      owner: 'chengfeng12',
+      repo: 'vuepressDome',
+      clientId: '8379e77b020c915bb07a',
+      clientSecret: 'ff13fe5c3d73db6ec7f5a109ba72eed40cbcebfc',
+      // 自动创建评论区域
+      autoCreateIssue: true
+    },
+  },
   // 如果你的主题名以 vuepress-theme- 开头，你可以使用缩写来省略这个前缀
   // theme: 'yyy',
   themeConfig: {
@@ -118,6 +121,7 @@ module.exports = {
         ['page-a', 'pagea - 对象'],
         ['page-b', 'pageb - 对象'],
         'PWA',
+        'vssue',
       ]
     }
     
