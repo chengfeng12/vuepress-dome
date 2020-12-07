@@ -2,13 +2,12 @@
   <div>
     <ClientOnly>
       <slot name="before"></slot>
-      <span ref="count"></span>
+      <span class="count" ref="count" :style="style"></span>
     </ClientOnly>
   </div>
 </template>
 
 <script>
-// import countUp from 'countUp.js'
 export default {
   props: {
     startVal: {
@@ -26,7 +25,8 @@ export default {
     duration: {
       type: Number,
       default: 2
-    }
+    },
+    style: String
   },
   data() {
     return {}
@@ -36,7 +36,6 @@ export default {
   },
   methods: {
     init() {
-      // console.log(countUp, 'countUp')
       import('countUp.js').then(module => {
         this.$nextTick(() => {
           this.counter = new module.CountUp(this.$refs.count, this.endVal, {
@@ -59,3 +58,12 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus">
+.count {
+  background: linear-gradient(to right, red, blue);
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 40px;
+}
+</style>
