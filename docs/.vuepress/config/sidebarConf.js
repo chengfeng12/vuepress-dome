@@ -9,7 +9,6 @@ module.exports = {
     'vssue',
     '/page/countUp',
     '/page/markdown',
-    
   ]
 }
 
