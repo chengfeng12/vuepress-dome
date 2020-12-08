@@ -2,7 +2,7 @@
 title: 'counrUp 组件调用全局组件'
 ---
 
-<CountUp :endVal="9527" />
+<countUp :endVal="9527" />
 
 ##  # 组件展示
-<<< @/docs/.vuepress/components/CountUp.vue
+<<< @/docs/.vuepress/components/countUp.vue

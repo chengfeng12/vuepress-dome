@@ -8,7 +8,7 @@ module.exports = {
   title: '我是一条鱼',
   description: '我是一只快乐的鱼的网站，欢迎前来参观',
   head: headConf,
-  base: '/',
+  base: '/docs/',
   plugins: pluginConf,
   // 如果你的主题名以 vuepress-theme- 开头，你可以使用缩写来省略这个前缀
   // theme: 'yyy',
