@@ -7,7 +7,9 @@
     "dev": "vuepress dev docs --temp .temp",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "deploy": "bash deploy.sh"
+    "deploy": "bash deploy.sh",
+    "cname": "bash cname.sh"
+
   },
   "repository": {
     "type": "git",
