@@ -8,6 +8,7 @@ module.exports = {
     'PWA',
     'vssue',
     '/page/countUp',
+    '/page/markdown',
     
   ]
 }
