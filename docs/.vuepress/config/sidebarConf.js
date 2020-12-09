@@ -7,8 +7,8 @@ module.exports = {
     ['page-b', 'pageb - 对象'],
     'PWA',
     'vssue',
-    '/page/countUp',
-    '/page/markdown',
+    'countUp',
+    'markdown',
   ]
 }
 
